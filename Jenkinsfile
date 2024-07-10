@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = 'github-copilot-python'
-        KUBECONFIG_CREDENTIALS = credentials('KUBECONFIG_CREDENTIALS_ID')
+        // KUBECONFIG_CREDENTIALS = credentials('KUBECONFIG_CREDENTIALS_ID')
         EKS_CLUSTER_NAME = 'my-cluster'
         region = 'us-east-1'
         accountID = '499756076901'
