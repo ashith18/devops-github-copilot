@@ -54,28 +54,41 @@ Congratulations, you now have CoPilot installed on your machine!
 ![Image Alt text](/screenshots/deployment-1.png "Deployment")
 
 ## 4) Service manifest file
+  A Kubernetes Service is a resource that defines a policy to access the pods in a Kubernetes application. The Service resource abstracts the way to access a set of pods as a network service.
 
   prompt:- @workspace create k8s service for deployment
 
 ![Image Alt text](/screenshots/service.png "Service")
 
 ## 5) HPA
+  This Horizontal Pod Autoscaler (HPA) manifest automatically scales the number of pods in a deployment based on observed CPU utilization.
 
   prompt:- @workspace and also add HPA to deployment
 
 ![Image Alt text](/screenshots/hpa.png "hpa")
 
 ## 6) Persistent Volume and Persistent Volume claim
+  Persistent Volumes (PVs) and Persistent Volume Claims (PVCs) are Kubernetes resources that allow you to manage durable storage in a cluster. This mechanism allows for storage to be provisioned on-demand, without requiring direct intervention by the cluster administrator, and for the lifecycle of storage to be managed independently from the lifecycle of the Pods that use it.
 
   prompt:- @workspace use azure blob storage for persistent volume storage create respective PV,PVC files and also update deployment file
 
 ![Image Alt text](/screenshots/volume.png "volume")
 
 ## 7) Ingress
+  An Ingress file in Kubernetes is a configuration file that defines rules for routing external HTTP(S) traffic to services within a Kubernetes cluster. It acts as an HTTP(S) router and is responsible for managing access to the applications running in the cluster from outside the Kubernetes cluster.
 
   prompt:- @workspace create ingress file
 
 ![Image Alt text](/screenshots/ingress.png "ingress")
+
+## 8) Jenkinsfile
+  Jenkinsfile automates the process of building, storing, and deploying applications, making it easier to manage deployments and ensure that the latest version of the application is always deployed in a consistent manner.
+
+  prompt:- @workspace Generate Jenkinsfile Stages include:- Build Docker Image Push image to ECR Deploy to EKS
+
+![Image Alt text](/screenshots/jenkinsfile-1.png "Jenkinsfile")
+![Image Alt text](/screenshots/jenkinsfile-2.png "Jenkinsfile")
+![Image Alt text](/screenshots/jenkinsfile-3.png "Jenkinsfile")
 
 
 
