@@ -1,4 +1,4 @@
-# 🤖 Generate DevOps solutions using github copilot 
+# 🤖 Generate DevOps solutions using github copilot.
 
 ## What is GitHub Copilot?
 
