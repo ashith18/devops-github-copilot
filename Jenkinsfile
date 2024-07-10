@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'demoapp'
+        DOCKER_IMAGE = 'github-copilot'
         KUBECONFIG_CREDENTIALS = credentials('KUBECONFIG_CREDENTIALS_ID')
         EKS_CLUSTER_NAME = 'my-cluster'
         region = 'us-east-1'
