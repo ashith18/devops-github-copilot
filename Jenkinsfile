@@ -23,8 +23,8 @@ pipeline {
                 withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'AWS_ID']]) {
                     script {
                         sh "aws ecr get-login-password --region ${region} | docker login --username AWS --password-stdin ${accountID}.dkr.ecr.${region}.amazonaws.com"
-                        sh "docker tag ${DOCKER_IMAGE}:${env.BUILD_ID} 499756076901.dkr.ecr.${region}.amazonaws.com/${DOCKER_IMAGE}:${env.BUILD_ID}"
-                        sh "docker push ${accountID}.dkr.ecr.${region}.amazonaws.com/${DOCKER_IMAGE}:${env.BUILD_ID}"
+                        sh "docker tag ${DOCKER_IMAGE}:${env.BUILD_ID} 499756076901.dkr.ecr.${region}.amazonaws.com/${DOCKER_IMAGE}:latest"
+                        sh "docker push ${accountID}.dkr.ecr.${region}.amazonaws.com/${DOCKER_IMAGE}:latest"
                     }
                 }
             }
