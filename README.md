@@ -41,7 +41,7 @@ Congratulations, you now have CoPilot installed on your machine!
 ## 2) Azure-pipeline ☁️ 
 
   prompt:- @workspace create azure pipeline for CI part - use docker
-           @workspace add task to push docker image to docker hub registry
+           add task to push docker image to docker hub registry
            add artifact, cache and also add stage for deployment I had manifest files in root dir - deployment is in azure kubernetes service, - and also optimise full azure-pipeline configuration file
 
 ![Image Alt text](/screenshots/pipeline-1.png "pipeline-1")
